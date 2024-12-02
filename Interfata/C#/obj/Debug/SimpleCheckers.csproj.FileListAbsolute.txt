@@ -1,0 +1,10 @@
+D:\Unsorted Projects\AI\L7\Interfata\C#\bin\Debug\SimpleCheckers.exe.config
+D:\Unsorted Projects\AI\L7\Interfata\C#\bin\Debug\SimpleCheckers.exe
+D:\Unsorted Projects\AI\L7\Interfata\C#\bin\Debug\SimpleCheckers.pdb
+D:\Unsorted Projects\AI\L7\Interfata\C#\obj\Debug\SimpleCheckers.csproj.AssemblyReference.cache
+D:\Unsorted Projects\AI\L7\Interfata\C#\obj\Debug\SimpleCheckers.MainForm.resources
+D:\Unsorted Projects\AI\L7\Interfata\C#\obj\Debug\SimpleCheckers.Properties.Resources.resources
+D:\Unsorted Projects\AI\L7\Interfata\C#\obj\Debug\SimpleCheckers.csproj.GenerateResource.cache
+D:\Unsorted Projects\AI\L7\Interfata\C#\obj\Debug\SimpleCheckers.csproj.CoreCompileInputs.cache
+D:\Unsorted Projects\AI\L7\Interfata\C#\obj\Debug\SimpleCheckers.exe
+D:\Unsorted Projects\AI\L7\Interfata\C#\obj\Debug\SimpleCheckers.pdb
