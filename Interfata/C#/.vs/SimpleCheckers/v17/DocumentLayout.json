@@ -1,14 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Unsorted Projects\\AI\\L7\\Interfata\\C#\\",
+  "WorkspaceRootPath": "D:\\Unsorted Projects\\AI\\Xsi0\\Interfata\\C#\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FCAE1037-36E1-4686-93D6-DAEA20408B1E}|SimpleCheckers.csproj|d:\\unsorted projects\\ai\\l7\\interfata\\c#\\rezolvare.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FCAE1037-36E1-4686-93D6-DAEA20408B1E}|SimpleCheckers.csproj|D:\\Unsorted Projects\\AI\\Xsi0\\Interfata\\C#\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCAE1037-36E1-4686-93D6-DAEA20408B1E}|SimpleCheckers.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCAE1037-36E1-4686-93D6-DAEA20408B1E}|SimpleCheckers.csproj|d:\\unsorted projects\\ai\\xsi0\\interfata\\c#\\rezolvare.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FCAE1037-36E1-4686-93D6-DAEA20408B1E}|SimpleCheckers.csproj|solutionrelative:rezolvare.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FCAE1037-36E1-4686-93D6-DAEA20408B1E}|SimpleCheckers.csproj|D:\\Unsorted Projects\\AI\\L7\\Interfata\\C#\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FCAE1037-36E1-4686-93D6-DAEA20408B1E}|SimpleCheckers.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FCAE1037-36E1-4686-93D6-DAEA20408B1E}|SimpleCheckers.csproj|d:\\unsorted projects\\ai\\xsi0\\interfata\\c#\\minimax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCAE1037-36E1-4686-93D6-DAEA20408B1E}|SimpleCheckers.csproj|solutionrelative:minimax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCAE1037-36E1-4686-93D6-DAEA20408B1E}|SimpleCheckers.csproj|d:\\unsorted projects\\ai\\xsi0\\interfata\\c#\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FCAE1037-36E1-4686-93D6-DAEA20408B1E}|SimpleCheckers.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,25 +34,51 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainForm.cs",
-              "DocumentMoniker": "D:\\Unsorted Projects\\AI\\L7\\Interfata\\C#\\MainForm.cs",
-              "RelativeDocumentMoniker": "MainForm.cs",
-              "ToolTip": "D:\\Unsorted Projects\\AI\\L7\\Interfata\\C#\\MainForm.cs",
-              "RelativeToolTip": "MainForm.cs",
-              "ViewState": "AQIAAH0AAAAAAAAAAADgv4YAAAAJAAAA",
+              "DocumentIndex": 2,
+              "Title": "Minimax.cs",
+              "DocumentMoniker": "D:\\Unsorted Projects\\AI\\Xsi0\\Interfata\\C#\\Minimax.cs",
+              "RelativeDocumentMoniker": "Minimax.cs",
+              "ToolTip": "D:\\Unsorted Projects\\AI\\Xsi0\\Interfata\\C#\\Minimax.cs",
+              "RelativeToolTip": "Minimax.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T20:18:50.463Z"
+              "WhenOpened": "2024-12-02T15:54:07.926Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainForm.cs [Design]",
+              "DocumentMoniker": "D:\\Unsorted Projects\\AI\\Xsi0\\Interfata\\C#\\MainForm.cs",
+              "RelativeDocumentMoniker": "MainForm.cs",
+              "ToolTip": "D:\\Unsorted Projects\\AI\\Xsi0\\Interfata\\C#\\MainForm.cs [Design]",
+              "RelativeToolTip": "MainForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T12:04:10.35Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "D:\\Unsorted Projects\\AI\\Xsi0\\Interfata\\C#\\MainForm.cs",
+              "RelativeDocumentMoniker": "MainForm.cs",
+              "ToolTip": "D:\\Unsorted Projects\\AI\\Xsi0\\Interfata\\C#\\MainForm.cs",
+              "RelativeToolTip": "MainForm.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAPEAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T20:18:50.463Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Rezolvare.cs",
-              "DocumentMoniker": "D:\\Unsorted Projects\\AI\\L7\\Interfata\\C#\\Rezolvare.cs",
+              "DocumentMoniker": "D:\\Unsorted Projects\\AI\\Xsi0\\Interfata\\C#\\Rezolvare.cs",
               "RelativeDocumentMoniker": "Rezolvare.cs",
-              "ToolTip": "D:\\Unsorted Projects\\AI\\L7\\Interfata\\C#\\Rezolvare.cs",
+              "ToolTip": "D:\\Unsorted Projects\\AI\\Xsi0\\Interfata\\C#\\Rezolvare.cs",
               "RelativeToolTip": "Rezolvare.cs",
-              "ViewState": "AQIAAHUAAAAAAAAAAAAAAIEAAABIAAAA",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwCgAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-16T08:45:54.155Z",
               "EditorCaption": ""
