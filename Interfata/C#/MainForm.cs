@@ -1,49 +1,17 @@
-﻿/**************************************************************************
- *                                                                        *
- *  Copyright:   (c) 2016-2020, Florin Leon                               *
- *  E-mail:      florin.leon@academic.tuiasi.ro                           *
- *  Website:     http://florinleon.byethost24.com/lab_ia.html             *
- *  Description: Game playing. Minimax algorithm                          *
- *               (Artificial Intelligence lab 7)                          *
- *                                                                        *
- *  This code and information is provided "as is" without warranty of     *
- *  any kind, either expressed or implied, including but not limited      *
- *  to the implied warranties of merchantability or fitness for a         *
- *  particular purpose. You are free to use this source code in your      *
- *  applications as long as the original copyright notice is included.    *
- *                                                                        *
- **************************************************************************/
-
-using System;
+﻿using System;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 
-namespace SimpleCheckers
+namespace Xsi0
 {
     public enum PlayerType { None, Computer, Human };
 
     public partial class MainForm : Form
     {
-        private PlayerType _currentPlayer; // om sau calculator
+        private PlayerType _currentPlayer;
         private Bitmap _boardImage;
-        private PlayerType [][]_grid;
-        private int _size;
-
-        private PlayerType[][] CreateNewGrid()
-        {
-            PlayerType[][] grid = new PlayerType[_size][];
-            for (int i = 0; i < _size; i++)
-            {
-                grid[i] = new PlayerType[_size];
-                for (int j = 0; j < _size; j++)
-                {
-                    grid[i][j] = PlayerType.None;
-                }
-            }
-
-            return grid;
-        }
+        private GameGrid _gameGrid;
 
         public MainForm()
         {
@@ -60,9 +28,6 @@ namespace SimpleCheckers
             }
 
             _currentPlayer = PlayerType.None;
-            _size = 3;
-
-            _grid = CreateNewGrid();
 
             this.ClientSize = new System.Drawing.Size(700, 500);
             this.pictureBoxBoard.Size = new System.Drawing.Size(500, 500);
@@ -75,7 +40,7 @@ namespace SimpleCheckers
             Bitmap board = new Bitmap(_boardImage);
             e.Graphics.DrawImage(board, 0, 0);
 
-            if (_grid == null)
+            if (_gameGrid == null)
                 return;
 
             int dy = 250 + 12;
@@ -84,16 +49,16 @@ namespace SimpleCheckers
             SolidBrush transparentRed = new SolidBrush(Color.FromArgb(192, 255, 0, 0));
             SolidBrush transparentBlue = new SolidBrush(Color.FromArgb(192, 0, 0, 255));
 
-            for (int i = 0; i < _size; ++i)
+            for (int i = 0; i < _gameGrid.Size; ++i)
             {
-                for(int j = 0; j < _size; ++j)
+                for(int j = 0; j < _gameGrid.Size; ++j)
                 {
-                    if (_grid[i][j] == PlayerType.Computer)
+                    if (_gameGrid.Elements[i][j] == PlayerType.Computer)
                     {
                         e.Graphics.DrawEllipse(redPen, 12 + i * 125, dy - j * 125, 100, 100);
                     }
                     
-                    if(_grid[i][j] == PlayerType.Human)
+                    if(_gameGrid.Elements[i][j] == PlayerType.Human)
                     {
                         e.Graphics.DrawLine(bluePen, 12 + i * 125, dy - j * 125, (i + 1) * 125 - 12, dy - (j - 1) * 125 - 24);
                         e.Graphics.DrawLine(bluePen, (i + 1) * 125 - 12, dy - j * 125, 12 + i * 125, dy - (j - 1) * 125 - 24);
@@ -104,14 +69,14 @@ namespace SimpleCheckers
 
         private bool IsMoveValid(int x, int y)
         {
-            if (_grid[x][y] == PlayerType.None)
+            if (_gameGrid.Elements[x][y] == PlayerType.None)
                 return true;
             return false;
         }
 
         private void MakeMove(PlayerType playerType, int x, int y)
         {
-            _grid[x][y] = playerType;
+            _gameGrid.Elements[x][y] = playerType;
         }
 
         private void pictureBoxBoard_MouseUp(object sender, MouseEventArgs e)
@@ -133,13 +98,12 @@ namespace SimpleCheckers
                 if(_currentPlayer == PlayerType.Computer)
                     ComputerMove();
             }
-
         }
 
         private void ComputerMove()
         {
-            int nr = Minimax.FindNextPosition(_grid, _size, 0);
-            MakeMove(PlayerType.Computer, (int)(nr / 3), nr % 3);
+            Pair coordinates = Minimax.FindNextPosition(_gameGrid, 0);
+            MakeMove(PlayerType.Computer, coordinates.First(), coordinates.Second());
             pictureBoxBoard.Refresh();
 
             _currentPlayer = PlayerType.Human;
@@ -148,63 +112,9 @@ namespace SimpleCheckers
 
         private void CheckFinish()
         {
-            bool end = false;
-            PlayerType winner = PlayerType.None;
-
-            for(int i = 0; i < _size; ++i)
-            {
-                if (_grid[i][0] == _grid[i][1] && _grid[i][1] == _grid[i][2])
-                {
-                    end = true;
-                    winner = _grid[i][0];
-                    break;
-                }
-
-                if (_grid[0][i] == _grid[1][i] && _grid[1][i] == _grid[2][i])
-                {
-                    end = true;
-                    winner = _grid[0][i];
-                    break;
-                }
-            }
-
-            if(end == false)
-            {
-                if(_grid[0][0] == _grid[1][1] && _grid[2][2] == _grid[1][1])
-                {
-                    end = true;
-                    winner = _grid[0][0];
-                }
-                else if(_grid[0][2] == _grid[1][1] && _grid[2][0] == _grid[1][1])
-                {
-                    end = true;
-                    winner = _grid[1][1];
-                }
-            }
-
-            if (winner == PlayerType.None)
-                end = false;
-
-            if(end == false)
-            {
-                int remainingSpaces = 9;
-                for(int i = 0; i < _size; i++)
-                {
-                    for(int j = 0; j < _size; j++)
-                    {
-                        if (_grid[i][j] != PlayerType.None)
-                        {
-                            remainingSpaces--;
-                        }
-                    }
-                }
-
-                if(remainingSpaces == 0)
-                {
-                    end = true;
-                    winner = PlayerType.None;
-                }
-            }
+            bool end;
+            PlayerType winner;
+            _gameGrid.CheckFinish(out end, out winner);
 
             if (end)
             {
@@ -228,7 +138,7 @@ namespace SimpleCheckers
 
         private void jocNouToolStripMenuItem_Click(object sender, System.EventArgs e)
         {
-            _grid = CreateNewGrid();
+            _gameGrid = new GameGrid();
             _currentPlayer = PlayerType.Computer;
             ComputerMove();
         }
@@ -236,10 +146,11 @@ namespace SimpleCheckers
         private void despreToolStripMenuItem_Click(object sender, EventArgs e)
         {
             const string copyright =
-                "Proiect 2024, X si 0 folosind Algoritmul Minimax \r\n" +
-                "Inteligenta artificiala, Laboratorul 8\r\n";
+                "X si 0 folosind Algoritmul Minimax \r\n" +
+                "Inteligenta artificiala, Proiect 2024\r\n" +
+                "Facut de Stoean Vlad, Tamas Priscil Gabriel si Apostu Radu\r\n";
 
-            MessageBox.Show(copyright, "Despre jocul Dame simple");
+            MessageBox.Show(copyright, "Despre jocul X si 0");
         }
 
         private void iesireToolStripMenuItem_Click(object sender, System.EventArgs e)

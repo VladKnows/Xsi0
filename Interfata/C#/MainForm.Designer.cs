@@ -1,4 +1,4 @@
-﻿namespace SimpleCheckers
+﻿namespace Xsi0
 {
     partial class MainForm
     {
@@ -64,14 +64,14 @@
             // jocNouToolStripMenuItem
             // 
             this.jocNouToolStripMenuItem.Name = "jocNouToolStripMenuItem";
-            this.jocNouToolStripMenuItem.Size = new System.Drawing.Size(142, 26);
+            this.jocNouToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.jocNouToolStripMenuItem.Text = "Joc &nou";
             this.jocNouToolStripMenuItem.Click += new System.EventHandler(this.jocNouToolStripMenuItem_Click);
             // 
             // iesireToolStripMenuItem
             // 
             this.iesireToolStripMenuItem.Name = "iesireToolStripMenuItem";
-            this.iesireToolStripMenuItem.Size = new System.Drawing.Size(142, 26);
+            this.iesireToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.iesireToolStripMenuItem.Text = "&Iesire";
             this.iesireToolStripMenuItem.Click += new System.EventHandler(this.iesireToolStripMenuItem_Click);
             // 
@@ -87,7 +87,7 @@
             // despreToolStripMenuItem
             // 
             this.despreToolStripMenuItem.Name = "despreToolStripMenuItem";
-            this.despreToolStripMenuItem.Size = new System.Drawing.Size(148, 26);
+            this.despreToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.despreToolStripMenuItem.Text = "&Despre...";
             this.despreToolStripMenuItem.Click += new System.EventHandler(this.despreToolStripMenuItem_Click);
             // 
@@ -113,7 +113,7 @@
             this.ForeColor = System.Drawing.Color.White;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainForm";
-            this.Text = "Dame simple";
+            this.Text = "X si 0";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBoard)).EndInit();

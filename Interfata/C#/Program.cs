@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace SimpleCheckers
+namespace Xsi0
 {
     public static class Program
     {

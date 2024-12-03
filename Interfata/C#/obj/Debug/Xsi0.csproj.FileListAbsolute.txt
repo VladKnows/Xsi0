@@ -1,0 +1,10 @@
+D:\Unsorted Projects\AI\Xsi0\Interfata\C#\obj\Debug\Xsi0.csproj.AssemblyReference.cache
+D:\Unsorted Projects\AI\Xsi0\Interfata\C#\obj\Debug\Xsi0.csproj.GenerateResource.cache
+D:\Unsorted Projects\AI\Xsi0\Interfata\C#\obj\Debug\Xsi0.csproj.CoreCompileInputs.cache
+D:\Unsorted Projects\AI\Xsi0\Interfata\C#\bin\Debug\Xsi0.exe.config
+D:\Unsorted Projects\AI\Xsi0\Interfata\C#\bin\Debug\Xsi0.exe
+D:\Unsorted Projects\AI\Xsi0\Interfata\C#\bin\Debug\Xsi0.pdb
+D:\Unsorted Projects\AI\Xsi0\Interfata\C#\obj\Debug\Xsi0.MainForm.resources
+D:\Unsorted Projects\AI\Xsi0\Interfata\C#\obj\Debug\Xsi0.Properties.Resources.resources
+D:\Unsorted Projects\AI\Xsi0\Interfata\C#\obj\Debug\Xsi0.exe
+D:\Unsorted Projects\AI\Xsi0\Interfata\C#\obj\Debug\Xsi0.pdb

@@ -1,14 +1,36 @@
 ﻿using System;
 
-namespace SimpleCheckers
+namespace Xsi0
 {
     /// <summary>
     /// Implementeaza algoritmul de cautare a mutarii optime
     /// </summary>
     public partial class Minimax
     {
-        private static Random _rand = new Random();
+        /// <summary>
+        /// Primeste o configuratie ca parametru, cauta mutarea optima si returneaza configuratia
+        /// care rezulta prin aplicarea acestei mutari optime
+        /// </summary>
+        public static Pair FindNextPosition(GameGrid gameGrid, int depth)
+        {
+            /*TODO*/
+            double bestScore = double.MinValue;
+            Pair bestMove = new Pair(-1, -1);
 
-        // public static Board FindNextBoard(Board currentBoard) - completati aceasta metoda in fisierul Rezolvare.cs
+            foreach (var move in gameGrid.ValidMoves())
+            {
+                GameGrid nextGameGrid = new GameGrid(gameGrid);
+                nextGameGrid.SetElement(move.First(), move.Second(), PlayerType.Computer);
+                double score = nextGameGrid.EvaluationFunction();
+
+                if (score > bestScore)
+                {
+                    bestMove = move;
+                    bestScore = score;
+                }
+            }
+
+            return bestMove;
+        }
     }
 }
