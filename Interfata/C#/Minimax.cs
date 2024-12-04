@@ -15,13 +15,13 @@ namespace Xsi0
         {
             /*TODO*/
             double bestScore = double.MinValue;
-            Pair bestMove = new Pair(-1, -1);
+            Pair bestMove = gameGrid.ValidMoves()[0];
 
             foreach (var move in gameGrid.ValidMoves())
             {
                 GameGrid nextGameGrid = new GameGrid(gameGrid);
                 nextGameGrid.SetElement(move.First(), move.Second(), PlayerType.Computer);
-                double score = nextGameGrid.EvaluationFunction();
+                double score = nextGameGrid.EvaluationFunction(PlayerType.Computer);
 
                 if (score > bestScore)
                 {

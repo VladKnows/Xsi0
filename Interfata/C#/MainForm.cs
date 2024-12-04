@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
 namespace Xsi0
@@ -27,7 +28,7 @@ namespace Xsi0
                 Environment.Exit(1);
             }
 
-            _currentPlayer = PlayerType.None;
+            _currentPlayer = PlayerType.Computer;
 
             this.ClientSize = new System.Drawing.Size(700, 500);
             this.pictureBoxBoard.Size = new System.Drawing.Size(500, 500);
@@ -139,8 +140,18 @@ namespace Xsi0
         private void jocNouToolStripMenuItem_Click(object sender, System.EventArgs e)
         {
             _gameGrid = new GameGrid();
-            _currentPlayer = PlayerType.Computer;
-            ComputerMove();
+            pictureBoxBoard.Refresh();
+
+            if(_currentPlayer == PlayerType.None)
+            {
+                if (jucatorTextBox.Text == "Jucator: Om")
+                    _currentPlayer = PlayerType.Human;
+                else
+                    _currentPlayer = PlayerType.Computer;
+            }
+
+            if(_currentPlayer == PlayerType.Computer)
+                ComputerMove();
         }
 
         private void despreToolStripMenuItem_Click(object sender, EventArgs e)
@@ -156,6 +167,18 @@ namespace Xsi0
         private void iesireToolStripMenuItem_Click(object sender, System.EventArgs e)
         {
             Environment.Exit(0);
+        }
+
+        private void computerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            _currentPlayer = PlayerType.Computer;
+            jucatorTextBox.Text = "Jucator: Computer";
+        }
+
+        private void omToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            _currentPlayer = PlayerType.Human;
+            jucatorTextBox.Text = "Jucator: Om";
         }
     }
 }

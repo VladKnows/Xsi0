@@ -35,6 +35,10 @@
             this.ajutorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.despreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBoxBoard = new System.Windows.Forms.PictureBox();
+            this.primulToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.computerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.omToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.jucatorTextBox = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBoard)).BeginInit();
             this.SuspendLayout();
@@ -55,7 +59,8 @@
             // 
             this.jocToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.jocNouToolStripMenuItem,
-            this.iesireToolStripMenuItem});
+            this.iesireToolStripMenuItem,
+            this.primulToolStripMenuItem});
             this.jocToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlText;
             this.jocToolStripMenuItem.Name = "jocToolStripMenuItem";
             this.jocToolStripMenuItem.Size = new System.Drawing.Size(44, 24);
@@ -87,7 +92,7 @@
             // despreToolStripMenuItem
             // 
             this.despreToolStripMenuItem.Name = "despreToolStripMenuItem";
-            this.despreToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.despreToolStripMenuItem.Size = new System.Drawing.Size(148, 26);
             this.despreToolStripMenuItem.Text = "&Despre...";
             this.despreToolStripMenuItem.Click += new System.EventHandler(this.despreToolStripMenuItem_Click);
             // 
@@ -101,12 +106,47 @@
             this.pictureBoxBoard.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBoxBoard_Paint);
             this.pictureBoxBoard.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBoxBoard_MouseUp);
             // 
+            // primulToolStripMenuItem
+            // 
+            this.primulToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.computerToolStripMenuItem,
+            this.omToolStripMenuItem});
+            this.primulToolStripMenuItem.Name = "primulToolStripMenuItem";
+            this.primulToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.primulToolStripMenuItem.Text = "&Primul";
+            // 
+            // computerToolStripMenuItem
+            // 
+            this.computerToolStripMenuItem.Name = "computerToolStripMenuItem";
+            this.computerToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.computerToolStripMenuItem.Text = "Computer";
+            this.computerToolStripMenuItem.Click += new System.EventHandler(this.computerToolStripMenuItem_Click);
+            // 
+            // omToolStripMenuItem
+            // 
+            this.omToolStripMenuItem.Name = "omToolStripMenuItem";
+            this.omToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.omToolStripMenuItem.Text = "Om";
+            this.omToolStripMenuItem.Click += new System.EventHandler(this.omToolStripMenuItem_Click);
+            // 
+            // jucatorTextBox
+            // 
+            this.jucatorTextBox.Location = new System.Drawing.Point(12, 160);
+            this.jucatorTextBox.Name = "jucatorTextBox";
+            this.jucatorTextBox.ReadOnly = true;
+            this.jucatorTextBox.Size = new System.Drawing.Size(127, 22);
+            this.jucatorTextBox.TabIndex = 2;
+            this.jucatorTextBox.TabStop = false;
+            this.jucatorTextBox.Text = "Jucator: Computer";
+            this.jucatorTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(927, 600);
+            this.Controls.Add(this.jucatorTextBox);
             this.Controls.Add(this.pictureBoxBoard);
             this.Controls.Add(this.menuStrip1);
             this.DoubleBuffered = true;
@@ -131,6 +171,10 @@
         private System.Windows.Forms.PictureBox pictureBoxBoard;
         private System.Windows.Forms.ToolStripMenuItem ajutorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem despreToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem primulToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem computerToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem omToolStripMenuItem;
+        private System.Windows.Forms.TextBox jucatorTextBox;
     }
 }
 
