@@ -143,6 +143,10 @@ namespace Xsi0
         }
 
         private enum LineType { Row, Column, Diagonal };
+
+        /// <summary>
+        /// Verifica daca pe o anumita linie exista 2 simboluri de tipul playerType si un spatiu gol
+        /// </summary>
         private bool IsGoingToWin(LineType lineType, int index, PlayerType playerType)
         {
             int nr = 0;
@@ -198,6 +202,9 @@ namespace Xsi0
             return false;
         }
 
+        /// <summary>
+        /// Verifica castigul jocului
+        /// </summary>
         private bool Win(LineType lineType, int index, PlayerType playerType)
         {
             int nr = 0;
@@ -244,6 +251,9 @@ namespace Xsi0
             return false;
         }
 
+        /// <summary>
+        /// Verifica daca casuta cu coordonatele (x, y) este pe o anumita linie
+        /// </summary>
         private bool isInLine(int x, int y, int index, LineType lineType)
         {
             switch (lineType)
@@ -285,6 +295,9 @@ namespace Xsi0
             return false;
         }
 
+        /// <summary>
+        /// Verifica existenta a 2 sau mai multe linii pe care exista 2 simboluri de tip playerType si un spatiu gol
+        /// </summary>
         private bool ThreeSymbols(int x, int y, PlayerType playerType)
         {
             int nr = 0;
@@ -303,6 +316,9 @@ namespace Xsi0
             return false;
         }
 
+        /// <summary>
+        /// Calculeaza scorul pentru fiecare celula in functie de cine a pus simbolul
+        /// </summary>
         private double ScoreForCell(int x, int y, PlayerType playerType)
         {
             double score = 0;
@@ -325,7 +341,9 @@ namespace Xsi0
         /// <summary>
         /// Calculeaza functia de evaluare statica pentru configuratia (tabla) curenta
         /// Algoritmul calculeaza un scor in functie de:
-        /// - Daca unul din jucatori este pe cale sa termine o linie / coloana
+        /// - Daca jucatorul curent a castigat
+        /// - Daca jucatorul urmator are loc liber pentru a face o linie
+        /// - Daca jucatorul curent are 2 sau mai multe linii pe care v-a putea castiga data viitoare cand ii vine randul
         /// - In cate linii / coloane poate fi X sau 0
         /// </summary>
         public double EvaluationFunction(PlayerType playerType)
