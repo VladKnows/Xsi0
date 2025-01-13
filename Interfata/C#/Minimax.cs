@@ -13,7 +13,6 @@ namespace Xsi0
         /// </summary>
         public static Pair FindNextPosition(GameGrid gameGrid, int depth)
         {
-            /*TODO*/
             double bestScore = double.MinValue;
             Pair bestMove = gameGrid.ValidMoves()[0];
 

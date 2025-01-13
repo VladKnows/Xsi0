@@ -32,15 +32,17 @@
             this.jocToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.jocNouToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.iesireToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ajutorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.despreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBoxBoard = new System.Windows.Forms.PictureBox();
             this.primulToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.computerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.omToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ajutorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.despreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBoxBoard = new System.Windows.Forms.PictureBox();
             this.jucatorTextBox = new System.Windows.Forms.TextBox();
+            this.numericUpDown_depth = new System.Windows.Forms.NumericUpDown();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBoard)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_depth)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -80,6 +82,29 @@
             this.iesireToolStripMenuItem.Text = "&Iesire";
             this.iesireToolStripMenuItem.Click += new System.EventHandler(this.iesireToolStripMenuItem_Click);
             // 
+            // primulToolStripMenuItem
+            // 
+            this.primulToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.computerToolStripMenuItem,
+            this.omToolStripMenuItem});
+            this.primulToolStripMenuItem.Name = "primulToolStripMenuItem";
+            this.primulToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.primulToolStripMenuItem.Text = "&Primul";
+            // 
+            // computerToolStripMenuItem
+            // 
+            this.computerToolStripMenuItem.Name = "computerToolStripMenuItem";
+            this.computerToolStripMenuItem.Size = new System.Drawing.Size(158, 26);
+            this.computerToolStripMenuItem.Text = "Computer";
+            this.computerToolStripMenuItem.Click += new System.EventHandler(this.computerToolStripMenuItem_Click);
+            // 
+            // omToolStripMenuItem
+            // 
+            this.omToolStripMenuItem.Name = "omToolStripMenuItem";
+            this.omToolStripMenuItem.Size = new System.Drawing.Size(158, 26);
+            this.omToolStripMenuItem.Text = "Om";
+            this.omToolStripMenuItem.Click += new System.EventHandler(this.omToolStripMenuItem_Click);
+            // 
             // ajutorToolStripMenuItem
             // 
             this.ajutorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -106,29 +131,6 @@
             this.pictureBoxBoard.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBoxBoard_Paint);
             this.pictureBoxBoard.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBoxBoard_MouseUp);
             // 
-            // primulToolStripMenuItem
-            // 
-            this.primulToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.computerToolStripMenuItem,
-            this.omToolStripMenuItem});
-            this.primulToolStripMenuItem.Name = "primulToolStripMenuItem";
-            this.primulToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.primulToolStripMenuItem.Text = "&Primul";
-            // 
-            // computerToolStripMenuItem
-            // 
-            this.computerToolStripMenuItem.Name = "computerToolStripMenuItem";
-            this.computerToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.computerToolStripMenuItem.Text = "Computer";
-            this.computerToolStripMenuItem.Click += new System.EventHandler(this.computerToolStripMenuItem_Click);
-            // 
-            // omToolStripMenuItem
-            // 
-            this.omToolStripMenuItem.Name = "omToolStripMenuItem";
-            this.omToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.omToolStripMenuItem.Text = "Om";
-            this.omToolStripMenuItem.Click += new System.EventHandler(this.omToolStripMenuItem_Click);
-            // 
             // jucatorTextBox
             // 
             this.jucatorTextBox.Location = new System.Drawing.Point(12, 160);
@@ -140,12 +142,35 @@
             this.jucatorTextBox.Text = "Jucator: Computer";
             this.jucatorTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // numericUpDown_depth
+            // 
+            this.numericUpDown_depth.Location = new System.Drawing.Point(12, 356);
+            this.numericUpDown_depth.Maximum = new decimal(new int[] {
+            9,
+            0,
+            0,
+            0});
+            this.numericUpDown_depth.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDown_depth.Name = "numericUpDown_depth";
+            this.numericUpDown_depth.Size = new System.Drawing.Size(127, 22);
+            this.numericUpDown_depth.TabIndex = 4;
+            this.numericUpDown_depth.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(927, 600);
+            this.Controls.Add(this.numericUpDown_depth);
             this.Controls.Add(this.jucatorTextBox);
             this.Controls.Add(this.pictureBoxBoard);
             this.Controls.Add(this.menuStrip1);
@@ -157,6 +182,7 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBoard)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_depth)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -175,6 +201,7 @@
         private System.Windows.Forms.ToolStripMenuItem computerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem omToolStripMenuItem;
         private System.Windows.Forms.TextBox jucatorTextBox;
+        private System.Windows.Forms.NumericUpDown numericUpDown_depth;
     }
 }
 
