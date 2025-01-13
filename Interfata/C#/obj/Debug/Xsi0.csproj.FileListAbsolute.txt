@@ -8,3 +8,13 @@ D:\Unsorted Projects\AI\Xsi0\Interfata\C#\obj\Debug\Xsi0.csproj.GenerateResource
 D:\Unsorted Projects\AI\Xsi0\Interfata\C#\obj\Debug\Xsi0.csproj.CoreCompileInputs.cache
 D:\Unsorted Projects\AI\Xsi0\Interfata\C#\obj\Debug\Xsi0.exe
 D:\Unsorted Projects\AI\Xsi0\Interfata\C#\obj\Debug\Xsi0.pdb
+C:\Users\prisc\Documents\an 4 sem 1\ia\proiect\Xsi0\Interfata\C#\bin\Debug\Xsi0.exe.config
+C:\Users\prisc\Documents\an 4 sem 1\ia\proiect\Xsi0\Interfata\C#\bin\Debug\Xsi0.exe
+C:\Users\prisc\Documents\an 4 sem 1\ia\proiect\Xsi0\Interfata\C#\bin\Debug\Xsi0.pdb
+C:\Users\prisc\Documents\an 4 sem 1\ia\proiect\Xsi0\Interfata\C#\obj\Debug\Xsi0.csproj.AssemblyReference.cache
+C:\Users\prisc\Documents\an 4 sem 1\ia\proiect\Xsi0\Interfata\C#\obj\Debug\Xsi0.MainForm.resources
+C:\Users\prisc\Documents\an 4 sem 1\ia\proiect\Xsi0\Interfata\C#\obj\Debug\Xsi0.Properties.Resources.resources
+C:\Users\prisc\Documents\an 4 sem 1\ia\proiect\Xsi0\Interfata\C#\obj\Debug\Xsi0.csproj.GenerateResource.cache
+C:\Users\prisc\Documents\an 4 sem 1\ia\proiect\Xsi0\Interfata\C#\obj\Debug\Xsi0.csproj.CoreCompileInputs.cache
+C:\Users\prisc\Documents\an 4 sem 1\ia\proiect\Xsi0\Interfata\C#\obj\Debug\Xsi0.exe
+C:\Users\prisc\Documents\an 4 sem 1\ia\proiect\Xsi0\Interfata\C#\obj\Debug\Xsi0.pdb

@@ -118,7 +118,7 @@ namespace Xsi0
 
         private void ComputerMove()
         {
-            Pair coordinates = Minimax.FindNextPosition(_gameGrid, 0);
+            Pair coordinates = Minimax.GetOptimalMove(_gameGrid, (int)numericUpDown_depth.Value);
             MakeMove(PlayerType.Computer, coordinates.First(), coordinates.Second());
             pictureBoxBoard.Refresh();
 
