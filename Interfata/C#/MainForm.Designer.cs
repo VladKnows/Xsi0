@@ -71,14 +71,14 @@
             // jocNouToolStripMenuItem
             // 
             this.jocNouToolStripMenuItem.Name = "jocNouToolStripMenuItem";
-            this.jocNouToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.jocNouToolStripMenuItem.Size = new System.Drawing.Size(142, 26);
             this.jocNouToolStripMenuItem.Text = "Joc &nou";
             this.jocNouToolStripMenuItem.Click += new System.EventHandler(this.jocNouToolStripMenuItem_Click);
             // 
             // iesireToolStripMenuItem
             // 
             this.iesireToolStripMenuItem.Name = "iesireToolStripMenuItem";
-            this.iesireToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.iesireToolStripMenuItem.Size = new System.Drawing.Size(142, 26);
             this.iesireToolStripMenuItem.Text = "&Iesire";
             this.iesireToolStripMenuItem.Click += new System.EventHandler(this.iesireToolStripMenuItem_Click);
             // 
@@ -88,7 +88,7 @@
             this.computerToolStripMenuItem,
             this.omToolStripMenuItem});
             this.primulToolStripMenuItem.Name = "primulToolStripMenuItem";
-            this.primulToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.primulToolStripMenuItem.Size = new System.Drawing.Size(142, 26);
             this.primulToolStripMenuItem.Text = "&Primul";
             // 
             // computerToolStripMenuItem

@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "D:\\Unsorted Projects\\AI\\Xsi0\\Interfata\\C#\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{FCAE1037-36E1-4686-93D6-DAEA20408B1E}|Xsi0.csproj|d:\\unsorted projects\\ai\\xsi0\\interfata\\c#\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCAE1037-36E1-4686-93D6-DAEA20408B1E}|Xsi0.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCAE1037-36E1-4686-93D6-DAEA20408B1E}|Xsi0.csproj|D:\\Unsorted Projects\\AI\\Xsi0\\Interfata\\C#\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FCAE1037-36E1-4686-93D6-DAEA20408B1E}|Xsi0.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FCAE1037-36E1-4686-93D6-DAEA20408B1E}|Xsi0.csproj|D:\\Unsorted Projects\\AI\\Xsi0\\Interfata\\C#\\gamegrid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FCAE1037-36E1-4686-93D6-DAEA20408B1E}|Xsi0.csproj|solutionrelative:gamegrid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FCAE1037-36E1-4686-93D6-DAEA20408B1E}|Xsi0.csproj|d:\\unsorted projects\\ai\\xsi0\\interfata\\c#\\minimax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FCAE1037-36E1-4686-93D6-DAEA20408B1E}|Xsi0.csproj|D:\\Unsorted Projects\\AI\\Xsi0\\Interfata\\C#\\minimax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FCAE1037-36E1-4686-93D6-DAEA20408B1E}|Xsi0.csproj|solutionrelative:minimax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FCAE1037-36E1-4686-93D6-DAEA20408B1E}|Xsi0.csproj|D:\\Unsorted Projects\\AI\\Xsi0\\Interfata\\C#\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FCAE1037-36E1-4686-93D6-DAEA20408B1E}|Xsi0.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FCAE1037-36E1-4686-93D6-DAEA20408B1E}|Xsi0.csproj|d:\\unsorted projects\\ai\\xsi0\\interfata\\c#\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{FCAE1037-36E1-4686-93D6-DAEA20408B1E}|Xsi0.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,7 +34,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "MainForm.cs [Design]",
               "DocumentMoniker": "D:\\Unsorted Projects\\AI\\Xsi0\\Interfata\\C#\\MainForm.cs",
               "RelativeDocumentMoniker": "MainForm.cs",
@@ -46,20 +46,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "MainForm.cs",
               "DocumentMoniker": "D:\\Unsorted Projects\\AI\\Xsi0\\Interfata\\C#\\MainForm.cs",
               "RelativeDocumentMoniker": "MainForm.cs",
               "ToolTip": "D:\\Unsorted Projects\\AI\\Xsi0\\Interfata\\C#\\MainForm.cs",
               "RelativeToolTip": "MainForm.cs",
-              "ViewState": "AQIAACkAAAAAAAAAAAArwGkAAABFAAAA",
+              "ViewState": "AQIAAKIAAAAAAAAAAAAhwKkAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-03T20:17:28.415Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Minimax.cs",
               "DocumentMoniker": "D:\\Unsorted Projects\\AI\\Xsi0\\Interfata\\C#\\Minimax.cs",
               "RelativeDocumentMoniker": "Minimax.cs",
@@ -67,21 +67,19 @@
               "RelativeToolTip": "Minimax.cs",
               "ViewState": "AQIAAA0AAAAAAAAAAAAzwA4AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T21:10:22.941Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-03T21:10:22.941Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "GameGrid.cs",
               "DocumentMoniker": "D:\\Unsorted Projects\\AI\\Xsi0\\Interfata\\C#\\GameGrid.cs",
               "RelativeDocumentMoniker": "GameGrid.cs",
               "ToolTip": "D:\\Unsorted Projects\\AI\\Xsi0\\Interfata\\C#\\GameGrid.cs",
               "RelativeToolTip": "GameGrid.cs",
-              "ViewState": "AQIAAOgAAAAAAAAAAAAvwPwAAAA8AAAA",
+              "ViewState": "AQIAAB0AAAAAAAAAAAD4v6wAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T19:52:53.563Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-03T19:52:53.563Z"
             }
           ]
         }

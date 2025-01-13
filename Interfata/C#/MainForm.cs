@@ -47,8 +47,6 @@ namespace Xsi0
             int dy = 250 + 12;
             Pen redPen = new Pen(Color.Red, 3);
             Pen bluePen = new Pen(Color.Blue, 3);
-            SolidBrush transparentRed = new SolidBrush(Color.FromArgb(192, 255, 0, 0));
-            SolidBrush transparentBlue = new SolidBrush(Color.FromArgb(192, 0, 0, 255));
 
             for (int i = 0; i < _gameGrid.Size; ++i)
             {
@@ -82,13 +80,30 @@ namespace Xsi0
 
         private void pictureBoxBoard_MouseUp(object sender, MouseEventArgs e)
         {
+            if(_gameGrid == null)
+            {
+                MessageBox.Show("Porneste jocul!");
+            }
+
             if (_currentPlayer != PlayerType.Human)
                 return;
 
             int mouseX = e.X / 125;
             int mouseY = 2 - e.Y / 125;
 
-            if (IsMoveValid(mouseX, mouseY))
+            bool valid;
+
+            try
+            {
+                valid = IsMoveValid(mouseX, mouseY);
+            }
+            catch
+            {
+                MessageBox.Show("Apasa in chenar!");
+                valid = false;
+            }
+
+            if (valid)
             {
                 MakeMove(PlayerType.Human, mouseX, mouseY);
                 pictureBoxBoard.Refresh();
@@ -142,7 +157,7 @@ namespace Xsi0
             _gameGrid = new GameGrid();
             pictureBoxBoard.Refresh();
 
-            if(_currentPlayer == PlayerType.None)
+            if (_currentPlayer == PlayerType.None)
             {
                 if (jucatorTextBox.Text == "Jucator: Om")
                     _currentPlayer = PlayerType.Human;
@@ -150,7 +165,7 @@ namespace Xsi0
                     _currentPlayer = PlayerType.Computer;
             }
 
-            if(_currentPlayer == PlayerType.Computer)
+            if (_currentPlayer == PlayerType.Computer)
                 ComputerMove();
         }
 
